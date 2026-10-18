@@ -1,0 +1,24 @@
+[project]
+name = "visionq"
+version = "0.1.0"
+description = "This is VisionQ Project used to help solve problems"
+readme = "README.md"
+authors = [
+    { name = "Om_Jangam", email = "om.savalaram.jangam@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+     "notebook",
+    "ipykernel",
+    "python-dotenv",
+    "langchain",
+    "langchain-core",
+    "langchain-groq",
+]
+
+[project.scripts]
+visionq = "visionq:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
